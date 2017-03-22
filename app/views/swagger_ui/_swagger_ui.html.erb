@@ -22,7 +22,7 @@
               console.log(data);
           }
       },
-      docExpansion: '<%= doc_expansion || 'none' %>'
+      docExpansion: '<%= doc_expansion ||= 'none' %>'
     });
 
     window.swaggerUi.load();
