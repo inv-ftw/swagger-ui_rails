@@ -2,8 +2,6 @@
 
 A gem that lets you add [swagger-ui](https://github.com/wordnik/swagger-ui) easily to your rails application
 
-Current version: 2.1.0-alpha.7
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -14,11 +12,11 @@ Add this line to your application's Gemfile:
 
 Add to your application.js
 
-    //= require swagger-ui
+    //= swagger-ui
 
 Add to your application.css
 
-    *= require swagger-ui
+    *= swagger-ui
 
 Then add to some api_docs/index.html
 

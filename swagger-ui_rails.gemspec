@@ -13,7 +13,9 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/d4be4st/swagger-ui_rails"
   gem.license       = 'MIT'
 
-  gem.files = Dir["{app,lib}/**/*", "LICENSE.txt", "Rakefile", "README.md"]
+  gem.files         = `git ls-files`.split($/)
+  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
   gem.add_development_dependency "bundler", "~> 1.3"
