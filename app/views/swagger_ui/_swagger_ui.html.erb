@@ -22,7 +22,7 @@
               console.log(data);
           }
       },
-      docExpansion: "none"
+      docExpansion: <%= defined?(doc_expansion) && doc_expansion.present? ? doc_expansion: 'none' %>
     });
 
     window.swaggerUi.load();
