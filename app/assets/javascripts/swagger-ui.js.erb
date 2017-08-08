@@ -570,13 +570,13 @@ function program10(depth0,data) {
   }
 
 function program12(depth0,data) {
-
+  var defaultValue = typeof depth0.default == 'undefined' ? '' : depth0.default;
   var buffer = "", stack1;
   buffer += "\n     <input class='parameter' minlength='0' name='";
   if (stack1 = helpers.name) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.name; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + "' placeholder='' type='text' value=''/>\n    ";
+    + "' placeholder='' type='text' value='"+ defaultValue +"'/>\n    ";
   return buffer;
   }
 
